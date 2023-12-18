@@ -1,5 +1,6 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
+import { InkeepChatButton } from './components/InkeepChatButton'
 
 const config: DocsThemeConfig = {
   logo: <span>My Project</span>,
@@ -13,6 +14,9 @@ const config: DocsThemeConfig = {
   footer: {
     text: 'Nextra Docs Template',
   },
+  toc: {
+    extraContent: () => <InkeepChatButton />
+  }
 }
 
 export default config
